@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+
+<html lang="cs">
+    <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="format-detection" content="telephone=no"/>
+
+    <title>Méně je více | SlavaQQ</title>
+    
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/manifest.json">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#FF3DB4">
+    <meta name="theme-color" content="#ffffff">
+
+    
+    
+    
+    <link rel="stylesheet" href="https://slavaqq.github.io/css/main.min.a2ea2dc85d96662bdd29d62648b0570bb6c4240f94119a7a7dc7b8807ea43a31.css"/>
+
+    
+    
+    
+
+    
+    
+ 
+    
+    
+</head>
+
+    <body>
+        
+<nav>
+  <header>
+    <div class="site-title">
+        <a href="/">SlavaQQ</a>
+    </div>  
+</header>
+  <div class="nav-menu">
+  
+    <a class="color-link nav-link" href="/tags/">Štítky</a>
+  
+    <a class="color-link nav-link" href="/archives/">Archiv</a>
+  
+  <a class="color-link nav-link" href="https://slavaqq.github.io/index.xml" target="_blank" rel="noopener" type="application/rss+xml">RSS</a>
+</div>
+<footer class="footer">
+	<div class="social-icons">
+        
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    
+    
+
+    
+    
+    
+
+    
+
+    
+
+    
+
+    
+
+</div>
+
+
+
+
+	<p><a href="https://gohugo.io" target="_blank" rel="noopener">Built with Hugo</a></p>
+
+	<p><a href="https://github.com/Slavaqq/hugo-theme-noteworthy" target="_blank" rel="noopener">Noteworthy theme</a></p>
+
+	<script src="https://slavaqq.github.io/js/main.min.fa5c2b23e07b5d9bfad267a52b4b24fdb053e6fb7524993383594926a3ac270c.js" integrity="sha256-+lwrI+B7XZv60melK0sk/bBT5vt1JJkzg1lJJqOsJww="></script>
+</footer>
+
+</nav>
+        <div id="content" class="content-container">
+        
+<h1 class="post-title">Méně je více</h1>
+    
+    <time>9. 5. 2020</time>
+    
+    <div>
+        <p>
+        <p>Program <code>less</code> slouží pro zobrazení a listování textových souborů v terminálu.
+Vznikl jako náhrada programu <code>more</code>, který nenabízel možnost pohybovat se v textu zpět. Odtud pochází slovní hříčka v nadpisu <em>méně je více (less is more)</em>.</p>
+<p>Program <code>less</code> je součástí mnoha Unix-like systémů.
+Nastavit <code>less</code> jako výchozí <em>pager</em> lze pomocí proměnné <code>PAGER</code>.</p>
+<pre><code>export PAGER=less 
+</code></pre>
+<p>Program <code>less</code> pak bude použit například v <code>man</code> nebo <code>git log</code>.</p>
+<h2 id="příkazy">příkazy</h2>
+<p>Přehled příkazů se zobrazí po zadání <code>less --help</code>. Mnoho příkazu less převzal z editoru vi.
+Procházení souboru ukončí příkaz <code>q</code>.
+Less není editor, ale příkazem <code>v</code> otevřeme soubor v editoru nastaveném v proměnné <code>VISUAL</code> nebo <code>EDITOR</code>.</p>
+<h3 id="pohyb">pohyb</h3>
+<p>Před příkazy je možné vložit číslo <em>n</em>. Příkaz se pak provede n-krát.</p>
+<ul>
+<li><code>j</code> pohyb o jeden řádek vpřed. Jako další možnost lze použít klávesu Enter.</li>
+<li><code>k</code> pohyb o jeden řádek zpět.</li>
+<li><code>ctrl+F</code> pohyb o obrazovku vpřed <em>(F jako Forward)</em>. Jako další možnost lze použít mezerník.</li>
+<li><code>ctrl+B</code> pohyb o obrazovku zpět <em>(B jako Back nebo Backward)</em>.</li>
+<li><code>ctrl+D</code> pohyb o půl obrazovky vpřed <em>(D jako Down).</em></li>
+<li><code>ctrl+U</code> pohyb o půl obrazovky zpět <em>(U jako Up)</em>.</li>
+<li><code>g</code> pohyb na první řádek souboru</li>
+<li><code>G</code> pohyb na poslední řádek souboru</li>
+</ul>
+<h3 id="hledání">hledání</h3>
+<ul>
+<li><code>/</code> hledá regulární výraz za lomítkem směrem vpřed.</li>
+<li><code>n</code> zopakuje poslední hledání</li>
+<li><code>N</code> zopakuje poslední hledání, ale v protisměru</li>
+</ul>
+<h2 id="přepínače">přepínače</h2>
+<p>V proměnné <code>LESS</code> je možné nastavit přepínače, které se provedou při každém zavolání programu less.</p>
+<pre><code>export LESS=&quot;-N&quot;
+</code></pre>
+<ul>
+<li><code>less -N example.txt</code> zobrazí čísla řádků.</li>
+<li><code>less -m example.txt</code> zobrazí prompt s informací o pozici v souboru v procentech.</li>
+<li><code>less -X example.txt</code> zabrání vyčištění obrazovky po ukončení less neboli text souboru zůstane na obrazovce.</li>
+</ul>
+<p>Přepínač <code>+</code> provede příkaz uvedený za přepínačem hned po startu <code>less</code>.</p>
+<ul>
+<li><code>less +G example.txt</code> začne na konci souboru.</li>
+<li><code>less +100 example.txt</code> začne na 100. řádku souboru.</li>
+<li><code>less +/help example.txt</code> začne na prvním výskytu &ldquo;help&rdquo;.</li>
+</ul>
+<h2 id="odkazy">odkazy</h2>
+<ul>
+<li><a href="http://www.greenwoodsoftware.com/less/">domovská stránka less</a></li>
+<li><a href="https://www.freebsd.org/cgi/man.cgi?query=less">manuál less</a></li>
+<li><a href="https://github.com/gwsw/less">GitHub less</a></li>
+</ul>
+
+        </p>
+    </div>
+    
+
+    <div class="page-footer">
+        
+        <hr class="footer-divider">
+        
+            <a class="tag" href="/tags/unix">#unix</a>
+        
+            <a class="tag" href="/tags/macos">#macOS</a>
+        
+            <a class="tag" href="/tags/terminal">#terminal</a>
+        
+      
+    </div>
+
+
+        
+        </div>
+        <footer class="footer-mobile">
+	<div class="social-icons">
+        
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    
+    
+
+    
+    
+    
+
+    
+
+    
+
+    
+
+    
+
+</div>
+
+
+
+
+	<div class="footer-mobile-links">
+		<p><a href="https://gohugo.io" target="_blank" rel="noopener">Built with Hugo</a></p>
+		<span class="divider-bar">|</span>
+		<p><a href="https://github.com/Slavaqq/hugo-theme-noteworthy" target="_blank" rel="noopener">Noteworthy theme</a></p>
+	</div>
+
+	<script src="https://slavaqq.github.io/js/main.min.fa5c2b23e07b5d9bfad267a52b4b24fdb053e6fb7524993383594926a3ac270c.js" integrity="sha256-+lwrI+B7XZv60melK0sk/bBT5vt1JJkzg1lJJqOsJww="></script>
+</footer>
+
+    </body>
+</html>
