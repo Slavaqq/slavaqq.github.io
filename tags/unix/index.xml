@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>unix on SlavaQQ</title>
-    <link>/tags/unix/</link>
+    <link>https://slavaqq.github.io/tags/unix/</link>
     <description>Recent content in unix on SlavaQQ</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>cs</language>
     <lastBuildDate>Sat, 09 May 2020 15:00:00 +0200</lastBuildDate>
     
-	<atom:link href="/tags/unix/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://slavaqq.github.io/tags/unix/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Méně je více</title>
-      <link>/posts/less/</link>
+      <link>https://slavaqq.github.io/posts/less/</link>
       <pubDate>Sat, 09 May 2020 15:00:00 +0200</pubDate>
       
-      <guid>/posts/less/</guid>
+      <guid>https://slavaqq.github.io/posts/less/</guid>
       <description>Program less slouží pro zobrazení a listování textových souborů v terminálu.</description>
     </item>
     
