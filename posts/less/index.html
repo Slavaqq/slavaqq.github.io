@@ -3,15 +3,15 @@
 <head>
 	<meta charset="utf-8" />
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <base href="https://slavaqq.github.io/"><title>Méně je více - SlavaQQ</title><meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta property="og:title" content="Méně je více" />
+    <base href="https://slavaqq.github.io/"><title>Less, když méně je více - SlavaQQ</title><meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta property="og:title" content="Less, když méně je více" />
 <meta property="og:description" content="Program less slouží pro zobrazení a listování textových souborů v terminálu." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://slavaqq.github.io/posts/less/" />
-<meta property="article:published_time" content="2020-05-09T15:00:00+02:00" />
-<meta property="article:modified_time" content="2020-05-09T15:00:00+02:00" />
+<meta property="article:published_time" content="2020-06-21T17:00:00+02:00" />
+<meta property="article:modified_time" content="2020-06-21T17:00:00+02:00" />
 <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Méně je více"/>
+<meta name="twitter:title" content="Less, když méně je více"/>
 <meta name="twitter:description" content="Program less slouží pro zobrazení a listování textových souborů v terminálu."/>
 <link href="https://fonts.googleapis.com/css?family=Ubuntu:300,400,300italic,400italic|Raleway:200,300" rel="stylesheet">
 
@@ -50,8 +50,8 @@
 
 
 		<div class="post-header">
-			<h1 class="title">Méně je více</h1>
-			<div class="meta">Zveřejněno 9. 5. 2020</div>
+			<h1 class="title">Less, když méně je více</h1>
+			<div class="meta">Zveřejněno 21. 6. 2020</div>
 		</div>
 
 		<div class="markdown">
@@ -62,9 +62,11 @@ Vznikl jako náhrada programu <code>more</code>, který nenabízel možnost pohy
 </blockquote>
 <p>Program <code>less</code> je součástí mnoha Unix-like systémů.
 Nastavit <code>less</code> jako výchozí <em>pager</em> lze pomocí proměnné <code>PAGER</code>.</p>
-<pre><code>export PAGER=less 
+<pre><code>$&gt;echo $PAGER
+more
+$&gt;export PAGER=less 
 </code></pre>
-<p>Program <code>less</code> pak bude použit například v <code>man</code> nebo <code>git log</code>.</p>
+<p>Program <code>less</code> pak bude použit například v <code>man</code> nebo v <code>git log</code>.</p>
 <h2 id="příkazy">příkazy</h2>
 <p>Přehled příkazů se zobrazí po zadání <code>less --help</code>. Mnoho příkazu less převzal z editoru vi.
 Procházení souboru ukončí příkaz <code>q</code>.
@@ -74,22 +76,26 @@ Less není editor, ale příkazem <code>v</code> otevřeme soubor v editoru nast
 <ul>
 <li><code>j</code> pohyb o jeden řádek vpřed. Jako další možnost lze použít klávesu Enter.</li>
 <li><code>k</code> pohyb o jeden řádek zpět.</li>
-<li><code>ctrl+F</code> pohyb o obrazovku vpřed <em>(F jako Forward)</em>. Jako další možnost lze použít mezerník.</li>
-<li><code>ctrl+B</code> pohyb o obrazovku zpět <em>(B jako Back nebo Backward)</em>.</li>
-<li><code>ctrl+D</code> pohyb o půl obrazovky vpřed <em>(D jako Down).</em></li>
-<li><code>ctrl+U</code> pohyb o půl obrazovky zpět <em>(U jako Up)</em>.</li>
-<li><code>g</code> pohyb na první řádek souboru</li>
-<li><code>G</code> pohyb na poslední řádek souboru</li>
+<li><code>f</code> nebo <code>ctrl+F</code> pohyb o obrazovku vpřed <em>(F jako Forward)</em>. Jako další možnost lze použít mezerník.</li>
+<li><code>b</code> nebo <code>ctrl+B</code> pohyb o obrazovku zpět <em>(B jako Back)</em>.</li>
+<li><code>d</code> nebo<code>ctrl+D</code> pohyb o půl obrazovky vpřed <em>(D jako Down).</em></li>
+<li><code>u</code> nebo <code>ctrl+U</code> pohyb o půl obrazovky zpět <em>(U jako Up)</em>.</li>
+<li><code>g</code> pohyb na první řádek souboru.</li>
+<li><code>G</code> pohyb na poslední řádek souboru.</li>
+<li><code>m&lt;značka&gt;</code> označí aktuální pozici &lt;značkou&gt;. Značka může být malé nebo velké písmeno.</li>
+<li><code>'&lt;značka&gt;</code> skočí na &lt;značku&gt;.</li>
 </ul>
 <h3 id="hledání">hledání</h3>
 <ul>
-<li><code>/</code> hledá regulární výraz za lomítkem směrem vpřed.</li>
-<li><code>n</code> zopakuje poslední hledání</li>
-<li><code>N</code> zopakuje poslední hledání, ale v protisměru</li>
+<li><code>/&lt;výraz&gt;</code> hledá regulární &lt;výraz&gt; za lomítkem směrem vpřed.</li>
+<li><code>?&lt;výraz&gt;</code> hledá regulární &lt;výraz&gt; za lomítkem směrem vzad.</li>
+<li><code>n</code> zopakuje poslední hledání.</li>
+<li><code>N</code> zopakuje poslední hledání, ale v protisměru.</li>
+<li><code>&amp;&lt;výraz&gt;</code> zobrazí pouze řádky obsahujicí regulární &lt;výraz&gt;.</li>
 </ul>
 <h2 id="přepínače">přepínače</h2>
 <p>V proměnné <code>LESS</code> je možné nastavit přepínače, které se provedou při každém zavolání programu less.</p>
-<pre><code>export LESS=&quot;-N&quot;
+<pre><code>$&gt;export LESS=&quot;-N&quot;
 </code></pre>
 <ul>
 <li><code>less -N example.txt</code> zobrazí čísla řádků.</li>
