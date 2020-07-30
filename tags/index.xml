@@ -6,10 +6,37 @@
     <description>Recent content in Štítky on SlavaQQ</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>cs</language>
-    <lastBuildDate>Sun, 21 Jun 2020 17:00:00 +0200</lastBuildDate>
+    <lastBuildDate>Thu, 30 Jul 2020 18:00:00 +0200</lastBuildDate>
     
 	<atom:link href="https://slavaqq.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>grep</title>
+      <link>https://slavaqq.github.io/tags/grep/</link>
+      <pubDate>Thu, 30 Jul 2020 18:00:00 +0200</pubDate>
+      
+      <guid>https://slavaqq.github.io/tags/grep/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>terminal</title>
+      <link>https://slavaqq.github.io/tags/terminal/</link>
+      <pubDate>Thu, 30 Jul 2020 18:00:00 +0200</pubDate>
+      
+      <guid>https://slavaqq.github.io/tags/terminal/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>unix-like</title>
+      <link>https://slavaqq.github.io/tags/unix-like/</link>
+      <pubDate>Thu, 30 Jul 2020 18:00:00 +0200</pubDate>
+      
+      <guid>https://slavaqq.github.io/tags/unix-like/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>less</title>
@@ -17,24 +44,6 @@
       <pubDate>Sun, 21 Jun 2020 17:00:00 +0200</pubDate>
       
       <guid>https://slavaqq.github.io/tags/less/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>terminal</title>
-      <link>https://slavaqq.github.io/tags/terminal/</link>
-      <pubDate>Sun, 21 Jun 2020 17:00:00 +0200</pubDate>
-      
-      <guid>https://slavaqq.github.io/tags/terminal/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>unix</title>
-      <link>https://slavaqq.github.io/tags/unix/</link>
-      <pubDate>Sun, 21 Jun 2020 17:00:00 +0200</pubDate>
-      
-      <guid>https://slavaqq.github.io/tags/unix/</guid>
       <description></description>
     </item>
     

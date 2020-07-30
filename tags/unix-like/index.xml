@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Posts on SlavaQQ</title>
-    <link>https://slavaqq.github.io/posts/</link>
-    <description>Recent content in Posts on SlavaQQ</description>
+    <title>unix-like on SlavaQQ</title>
+    <link>https://slavaqq.github.io/tags/unix-like/</link>
+    <description>Recent content in unix-like on SlavaQQ</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>cs</language>
     <lastBuildDate>Thu, 30 Jul 2020 18:00:00 +0200</lastBuildDate>
     
-	<atom:link href="https://slavaqq.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://slavaqq.github.io/tags/unix-like/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
